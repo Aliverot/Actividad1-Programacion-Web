@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Ejercicios | Actividad 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #927dc1;
+            --color-fondo: #F8F9FA;
+            --color-texto: #2B2042;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--color-fondo); color: var(--color-texto); padding: 40px 20px; }
+        .contenedor { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); }
+        h1 { text-align: center; color: var(--color-primario); margin-bottom: 10px; }
+        p { text-align: center; color: #60757D; margin-bottom: 30px; }
+        .cuadricula { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; list-style: none; }
+        .cuadricula li a { display: block; padding: 15px; text-align: center; background-color: #f0f0f0; color: var(--color-texto); text-decoration: none; border-radius: 8px; font-weight: 500; transition: background 0.3s, color 0.3s; }
+        .cuadricula li a:hover { background-color: var(--color-primario); color: white; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Actividad 1 - Programación Web</h1>
+        <p>Ejercicios Prácticos del Tema 2 (1 al 10)</p>
+        
+        <ul class="cuadricula">
+            <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+            <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+            <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+            <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+            <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+            <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+            <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+            <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+            <li><a href="ejercicio9.html">Ejercicio 9</a></li>
+            <li><a href="ejercicio10.html">Ejercicio 10</a></li>
+        </ul>
+    </div>
+</body>
+</html>
