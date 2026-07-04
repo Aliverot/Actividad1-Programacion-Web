@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13 - Determinar si puedes votar</title>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Determinar si puedes votar</h1>
+        <p class="subtitulo">Ingresa tu edad para verificar si puedes votar</p>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" placeholder="Ej: 25" required>
+            </div>
+
+            <button type="button" class="boton-enviar" onclick="verificarVoto()">
+                Verificar Voto
+            </button>
+            
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly placeholder="Resultado">
+
+            </div>
+        </form>
+    </div>
+
+    <script src="js/ejercicio13.js"></script>
+</body>
+</html>
