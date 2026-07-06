@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Calculadora</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calculadora de Numeros</h1>
+        <p class="subtitulo">Realiza operaciones basicas con funciones flecha</p>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="numero1">Primer numero</label>
+                <input type="text" id="numero1" placeholder="Ej: 10" required>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="numero2">Segundo numero</label>
+                <input type="text" id="numero2" placeholder="Ej: 5" required>
+            </div>
+
+            <div class="grupo-botones">
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('suma')">
+                    Sumar
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('resta')">
+                    Restar
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('multiplicacion')">
+                    Multiplicar
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('division')">
+                    Dividir
+                </button>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly placeholder="Esperando operacion...">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>

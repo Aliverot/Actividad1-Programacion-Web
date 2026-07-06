@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicio18.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="contenedor-formulario">
+            <h1>Manipulaci&oacute;n del DOM</h1>
+            <p class="subtitulo">Agrega y elimina elementos de una lista</p>
+
+            <div class="mb-3">
+                <label for="nuevoElemento" class="form-label">Nuevo elemento</label>
+                <input type="text" class="form-control" id="nuevoElemento" placeholder="Escribe algo">
+            </div>
+
+            <button type="button" class="btn btn-primary w-100 mb-3" id="agregarBtn">
+                Agregar
+            </button>
+
+            <ul class="list-group" id="lista">
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/ejercicio18.js"></script>
+</body>
+</html>

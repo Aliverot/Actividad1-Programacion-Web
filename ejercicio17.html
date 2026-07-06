@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Gesti&oacute;n de Tareas</title>
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Gesti&oacute;n de Tareas</h1>
+        <p class="subtitulo">Agrega y elimina tareas guardadas en Local Storage</p>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="nuevaTarea">Nueva tarea</label>
+                <input type="text" id="nuevaTarea" placeholder="Ej: Estudiar JavaScript" required>
+            </div>
+
+            <button type="button" class="boton-enviar" onclick="agregarTarea()">
+                Agregar Tarea
+            </button>
+        </form>
+
+        <ul class="lista-tareas" id="listaTareas">
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>
